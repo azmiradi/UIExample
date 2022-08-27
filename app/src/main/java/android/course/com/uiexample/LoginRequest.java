@@ -1,0 +1,29 @@
+package android.course.com.uiexample;
+
+public class LoginRequest {
+    private final String email;
+    private final String password;
+
+
+    public LoginRequest(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+
+
+    public void printInformation(){
+        System.out.println( "LoginRequest{" +
+                "email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}');
+    }
+}
